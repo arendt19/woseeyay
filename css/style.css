@@ -122,6 +122,12 @@
     color: #fff;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -129,12 +135,16 @@ body {
     background-color: var(--body-bg);
     padding-top: 56px; /* Высота навигационной панели */
     transition: var(--transition);
+    position: relative;
 }
 
 /* Общие стили для секций */
 section {
     padding: 100px 0;
     position: relative;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 /* Стили для карточек */
