@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link rel="icon" href="images/profile.png" type="image/png" />
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Моё Портфолио</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Обо мне</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Навыки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Цены</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button class="btn btn-sm btn-outline-light" id="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <header class="hero-section">
+        <div class="container text-center py-5">
+            <div class="profile-image-container">
+                <img src="images/profile.png" alt="Моё фото" class="profile-image">
+            </div>
+            <h1 class="display-4 mt-4">Привет, я Фарход</h1>
+        </div>
+    </header>
+
+    <!-- Обо мне -->
+    <section id="about" class="py-5 position-relative">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="container position-relative">
+            <div class="section-header">
+                <span class="section-subtitle">Давайте познакомимся</span>
+                <h2 class="section-title">Обо мне</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="about-image text-center animate" style="animation-delay: 0.2s;">
+                        <img src="images/profile.png" alt="Мое фото" class="img-fluid rounded-circle shadow" style="width: 280px; height: 280px; object-fit: cover; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content ps-lg-5">
+                        <h3 class="mb-4">Привет, я <span class="text-primary">Фарход</span></h3>
+                        <p class="lead mb-4">
+                            Full-stack разработчик с опытом создания современных веб-приложений под ключ.
+                        </p>
+                        
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="me-3 text-primary">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6 mb-1">Современные технологии</h5>
+                                        <p class="small mb-0 text-muted">Использую актуальные фреймворки и инструменты</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="me-3 text-primary">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6 mb-1">Гарантия качества</h5>
+                                        <p class="small mb-0 text-muted">Тестирование и оптимизация на каждом этапе</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="me-3 text-primary">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6 mb-1">Веб-разработка</h5>
+                                        <p class="small mb-0 text-muted">Полный цикл разработки веб-приложений</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="me-3 text-primary">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6 mb-1">Адаптивный дизайн</h5>
+                                        <p class="small mb-0 text-muted">Идеальное отображение на всех устройствах</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="#contact" class="btn btn-primary px-4">Связаться со мной</a>
+                            <a href="#projects" class="btn btn-outline-primary px-4">Мои работы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </section>
+
+  
+    <section id="pricing" class="py-5" style="background-color: var(--header-bg);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Прозрачные цены</span>
+                <h2 class="section-title">Стоимость услуг</h2>
+                <div class="section-divider"></div>
+                <p class="lead mx-auto mt-4" style="max-width: 700px;">
+                    Гибкие тарифы для проектов любого масштаба. Выбирайте подходящий вариант или закажите 
+                    индивидуальный расчет для вашего проекта.
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Базовый тариф -->
+                <div class="col-md-4">
+                    <div class="card h-100 pricing-card">
+                        <div class="popular-tag">Популярно</div>
+                        <div class="card-header text-center p-4">
+                            <h3 class="h4 mb-0">Базовый</h3>
+                            <div class="price mt-3">
+                                <span class="currency">от $</span>
+                                <span class="amount">120</span>
+                                <span class="period">/ проект</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Лендинг (до 5 секций)</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Адаптивный дизайн</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Интеграция с соцсетями</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Форма обратной связи</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Базовая SEO-оптимизация</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Адаптация под мобильные устройства</li>
+                                <li class="mb-3 text-muted"><i class="fas fa-times-circle me-2"></i>Техническая поддержка</li>
+                                <li class="mb-3 text-muted"><i class="fas fa-times-circle me-2"></i>Хостинг и домен</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <a href="#contact" class="btn btn-outline-primary w-100">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Бизнес тариф -->
+                <div class="col-md-4">
+                    <div class="card h-100 pricing-card popular">
+
+                        <div class="card-header bg-primary text-white text-center p-4">
+                            <h3 class="h4 mb-0">Бизнес</h3>
+                            <div class="price mt-3">
+                                <span class="currency">от $</span>
+                                <span class="amount">220</span>
+                                <span class="period">/ проект</span>
+                            </div>
+                            <div class="save-badge">Экономия 15%</div>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Корпоративный сайт (до 7 страниц)</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Уникальный дизайн под ваш бренд</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Мультиязычность (до 3 языков)</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Полная SEO-оптимизация</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Блог или новостная лента</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Форма обратной связи и заявок</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Техническая поддержка 1 месяц</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Хостинг и домен на 1 год (отдельно от цены за услугу)</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <a href="#contact" class="btn btn-primary w-100">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Доработки -->
+                <div class="col-md-4">
+                    <div class="card h-100 pricing-card">
+                        <div class="card-header text-center p-4">
+                            <h3 class="h4 mb-0">Доработки</h3>
+                            <div class="price mt-3">
+                                <span class="currency">от $</span>
+                                <span class="amount">20</span>
+                                <span class="period">/ задача</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Добавление нового функционала</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Исправление ошибок на сайте</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Ускорение загрузки страниц</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Адаптация дизайна</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Интеграция с платежными системами</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Настройка аналитики</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Консультации и рекомендации</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <a href="#contact" class="btn btn-outline-primary w-100">Обсудить задачу</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Навыки -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Мои экспертные области</span>
+                <h2 class="section-title">Профессиональные навыки</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p class="lead mx-auto" style="max-width: 700px;">
+                Я постоянно совершенствую свои навыки и изучаю новые технологии, чтобы предлагать 
+                клиентам современные и эффективные решения.
+            </p>
+            
+            <div class="row g-4">
+                <!-- Frontend -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-item p-4 text-center h-100">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4 class="h5 mb-3">Frontend</h4>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> HTML5 / CSS3 / SASS</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> JavaScript (ES6+)</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> React.js / Vue.js</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Bootstrap 5 / Tailwind</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Webpack / Vite</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-item p-4 text-center h-100">
+                        <i class="fas fa-server"></i>
+                        <h4 class="h5 mb-3">Backend</h4>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Python (Django, Flask)</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Node.js / Express</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> RESTful API</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> GraphQL</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Аутентификация</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Базы данных -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-item p-4 text-center h-100">
+                        <i class="fas fa-database"></i>
+                        <h4 class="h5 mb-3">Базы данных</h4>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> PostgreSQL</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> MySQL</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> MongoDB</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Redis</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Оптимизация запросов</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Инструменты -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-item p-4 text-center h-100">
+                        <i class="fas fa-tools"></i>
+                        <h4 class="h5 mb-3">Инструменты</h4>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Git / GitHub</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Docker</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Figma / Adobe XD</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Photoshop</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> VS Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#contact" class="btn btn-primary btn-lg">Связаться со мной</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Мои работы</span>
+                <h2 class="section-title">Портфолио проектов</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">WorkBy - Фриланс платформа</h3>
+                            <p class="card-text">
+                                WorkBy - это современная фриланс-платформа, разработанная на Django. Проект включает в себя:
+                            </p>
+                            <ul class="card-text">
+                                <li>Систему регистрации и аутентификации пользователей</li>
+                                <li>Личные кабинеты для заказчиков и исполнителей</li>
+                                <li>Размещение заказов и подачу заявок</li>
+                                <li>Чат между пользователями</li>
+                                <li>Рейтинговую систему и отзывы</li>
+                                <li>Управление платежами</li>
+                                <li>Чат-бот ассистент</li>
+                            </ul>
+                            <p class="card-text">Технологии: Django, PostgreSQL, Bootstrap, JavaScript, HTML5, CSS3</p>
+                            
+                            <!-- Галерея скриншотов -->
+                            <h4 class="mt-4 mb-3">Скриншоты проекта</h4>
+                            <div class="row g-3">
+                                <div class="col-md-4 col-6">
+                                    <a href="images/workby/1.jpg" data-lightbox="workby-gallery" data-title="Главная страница">
+                                        <img src="images/workby/1.jpg" class="img-fluid rounded shadow-sm" alt="Главная страница WorkBy">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <a href="images/workby/2.jpg" data-lightbox="workby-gallery" data-title="Страница заказов">
+                                        <img src="images/workby/2.jpg" class="img-fluid rounded shadow-sm" alt="Страница заказов">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <a href="images/workby/3.jpg" data-lightbox="workby-gallery" data-title="Профиль пользователя">
+                                        <img src="images/workby/3.jpg" class="img-fluid rounded shadow-sm" alt="Профиль пользователя">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <a href="images/workby/4.jpg" data-lightbox="workby-gallery" data-title="Чат между пользователями">
+                                        <img src="images/workby/4.jpg" class="img-fluid rounded shadow-sm" alt="Чат между пользователями">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <a href="images/workby/5.jpg" data-lightbox="workby-gallery" data-title="AI чат-бот">
+                                        <img src="images/workby/5.jpg" class="img-fluid rounded shadow-sm" alt="AI чат-бот">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <a href="images/workby/6.jpg" data-lightbox="workby-gallery" data-title="Предложения от фрилансеров к клиентам">
+                                        <img src="images/workby/6.jpg" class="img-fluid rounded shadow-sm" alt="Предложения от фрилансеров к клиентам">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <a href="images/workby/7.jpg" data-lightbox="workby-gallery" data-title="Кошелёк">
+                                        <img src="images/workby/7.jpg" class="img-fluid rounded shadow-sm" alt="Кошелёк">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <a href="https://github.com/arendt19/WorkBy" class="btn btn-primary me-2" target="_blank">
+                                    <i class="fab fa-github"></i> Посмотреть на GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="py-5" style="background-color: var(--header-bg);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Свяжитесь со мной</span>
+                <h2 class="section-title">Давайте обсудим ваш проект</h2>
+                <div class="section-divider"></div>
+                <p class="lead mx-auto mt-4" style="max-width: 700px;">
+                    Готов обсудить ваш проект и предложить наилучшее решение
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h4 class="mb-4">Мои контакты</h4>
+                            <p><i class="fas fa-envelope me-2"></i> woseeyay@gmail.com</p>
+                            <p><i class="fab fa-telegram me-2"></i> @woseeyay</p>
+                            <p><i class="fab fa-github me-2"></i> <a href="https://github.com/arendt19" target="_blank">github.com/arendt19</a></p>                                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Моё Портфолио. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Подключение скриптов -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
